@@ -1,0 +1,35 @@
+# Import the libraries
+from sklearnex import patch_sklearn
+patch_sklearn()
+
+# import basic libraries
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# import metrics
+from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error, f1_score
+
+# import train_test_split
+from sklearn.model_selection import GridSearchCV, train_test_split
+
+# import encoders
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder, OrdinalEncoder, LabelBinarizer
+
+# import scalers
+from sklearn.preprocessing import StandardScaler, MinMaxScaler, RobustScaler
+
+# import models
+import xgboost as xgb
+from sklearn.linear_model import LinearRegression
+from sklearn.linear_model import Ridge, Lasso, ElasticNet
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.neighbors import KNeighborsRegressor
+from sklearn.svm import SVR
+
+# importing feature selection algorithms
+from sklearn.feature_selection import SelectKBest, chi2
+print("All Libraries are imported and ready to use!")
+
